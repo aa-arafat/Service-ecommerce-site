@@ -19,9 +19,9 @@ header button{
     cursor: pointer;
 }
 header svg {
-    margin-right: 6px;
-    color: #FDB100;
-
+    margin-right: 10px;
+    fill: #FDB100;
+    font-size: 30px;
 }
 .logo{
     display: flex;
@@ -78,4 +78,68 @@ header nav ul li:hover{
     border-top: 4px solid #FDB100;
 }
 
+.banner >.image{
+    background-image: url(../img/mark-konig-Tl8mDaue_II-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-shadow: 0 0 5px lightgoldenrodyellow;
+    
+}
+.banner >.image h1{
+    margin-bottom: 100px;
+}
 
+.service-overview .titel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.service-overview .services{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    }
+
+    .service-overview .services ul li{
+        list-style: none;
+    }
+    .service-overview .services ul li i{
+        color: #FDB100;
+        margin-right: 10px;
+    }
+.service-overview .services>div{
+    flex-basis: 25%;
+}
+.service-overview .services .delivary-time{
+    display: flex;
+    gap: 10px;
+}
+.service-overview .services .delivary-time svg{
+    fill: #FDB100;
+    font-size: 30px;
+}
+.service-overview .services .storage{
+    display: flex;
+    gap: 10px;
+}
+.service-overview .services .storage svg{
+    fill: #FDB100;
+    font-size: 30px;
+}
+.divider{
+    margin-top: 80px;
+    background-image: url(../img/divider.svg);
+    height: 10px;
+    background-size: 20px 20px;
+    opacity: 0.1;
+}
