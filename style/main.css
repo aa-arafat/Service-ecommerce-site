@@ -1,6 +1,7 @@
 .container{
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 10px;
 }
 header > .container .head{
     padding-top: 30px;
@@ -39,6 +40,7 @@ header svg {
 .info{
     display: flex;
     align-items: center;
+    justify-content: center;
    
 }
 .search input{
@@ -47,10 +49,14 @@ header svg {
     font-size: 20px;
     opacity: 0.5;
     width: 350px;
+    border: 1px solid gray;
 }
-.info>.mobile{
+.info i{
     font-size: 20px;
+    margin-right: 5px;
+    color: #FDB100;
 }
+
 
 header nav ul{
     list-style: none;
@@ -163,7 +169,8 @@ header nav ul li:hover{
     width: 100%;
 }
 .service-list h3,p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 .service-list h3:hover{
     color: #FDB100;
@@ -180,6 +187,7 @@ header nav ul li:hover{
     position: relative;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
+    
 }
 .service-list ul li::before{
     content: '';
@@ -194,10 +202,14 @@ color: #FDB100;
 }
 footer{
     background-color: black;
-    padding: 200px;
+    padding: 100px;
+    margin-top: 50px;
 }
 footer .logo span{
      color: white;
+}
+footer .last-part>div{
+    flex: 100%;
 }
 
 .last-part{
@@ -212,8 +224,125 @@ footer .logo span{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
     margin-bottom: 15px;
+    width: max-content;
     
 }
 .last-part ul li:hover{
     color: #FDB100;
+}
+.last-part .contuct span{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.last-part .contuct i{
+    margin-right: 10px;
+    color: #FDB100;
+}
+.last-part .logo{
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1100px){
+    .search input{
+        width: 200px;
+    }
+    .banner >.image{
+        height: 400px;
+    }
+    .banner >.image h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    header > .container .head{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .search input{
+        width: 500px;
+        text-align: center;
+    }
+    .info{
+        flex-direction: column-reverse;
+        gap:10px;
+    }
+    .banner >.image{
+        height: 350px;
+    }
+    .banner >.image h1{
+        font-size: 45px;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    .last-part{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .banner >.image h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .service-overview .title, .services-section .title{
+        flex-direction: column;
+    }
+    .service-overview .services{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-list{
+        flex-direction: column;
+    }
+    .service-overview .services .storage{
+        justify-content: center;
+    }
+    .delivary-time {
+        align-items: center;
+        justify-content: center;
+    }
+    .banner >.image h1{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .banner >.image{
+        height: 350px;
+    }
+    .banner >.image h1{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .banner >.image{
+        height: 300px;
+    }
+    .banner >.image h1{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+.service-list ul{
+    margin-left: 30px;
+    .banner >.image{
+        height: 275px;
+    }
+   }
+   .banner >.image h1{
+    font-size: 25px;
+}
+}
+@media only screen and (max-width: 500px){
+    .banner >.image{
+        height: 250px;
+    }
+    .banner >.image h1{
+        font-size: 23px;
+    }
 }
