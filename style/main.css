@@ -259,9 +259,42 @@ header .close{
 .buttons{
     position: relative;
     display: flex;
-    top: 207px;
-    padding-left: 700px;
+    top: 190px;
+    justify-content: space-between;
+    align-items: center;
+    
 }
+#next{
+    margin-right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+}
+#next:hover{
+    
+    color: #FDB100;
+    border-radius: 50px;
+    background-color: rgba(245, 245, 245, 0.26);
+}
+#prev{
+    margin-left: 30px;
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+
+#prev:hover{
+    color: #FDB100;
+    border-radius: 50px;
+    background-color: rgba(245, 245, 245, 0.26);
+}
+
 .d-block{
     display: block !important;
 }
