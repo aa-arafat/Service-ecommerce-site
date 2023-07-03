@@ -6,6 +6,7 @@
     <title>Servicing-ecom</title>
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/responsive.css">
   </head>
   <body>
     <header>
@@ -45,12 +46,20 @@
             </ul>
         </div>
           </nav>
+          <div class="menu-background-shadwo"></div>
     </header>
     <main>
-        <div class="banner">
-           <div class="image">
-            <h1>Traffic lights</h1>
-           </div>
+        <div class="carousel">
+          <div class="banner-images">
+            <img data-serial="1" src="./img/2.jpg" alt="">
+            <img data-serial="2" src="./img/1.jpg" alt="">
+            <img data-serial="3" src="./img/3.jpg" alt="">
+            <img data-serial="4" src="./img/4.jpg" alt="">
+          </div>
+          <div class="buttons">
+            <button id="prev">prev</button>
+            <button id="next">next</button>
+        </div>
         </div>
         <section class="service-overview">
          <div class="container">

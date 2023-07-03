@@ -88,22 +88,8 @@ header nav ul li:hover{
     border-top: 4px solid #FDB100;
 }
 
-.banner >.image{
-    background-image: url(../img/mark-konig-Tl8mDaue_II-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 530px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: orange;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    text-shadow: 0 0 5px lightgoldenrodyellow;
-    
-}
-.banner >.image h1{
-    margin-bottom: 100px;
+.service-overview{
+    margin-top: 400px;
 }
 
 .service-overview .title, .services-section .title{
@@ -264,167 +250,18 @@ footer .last-part>div{
 header .close{
     display: none;
 }
-
-@media only screen and (max-width: 1100px){
-    .search input{
-        width: 200px;
-    }
-    .banner >.image{
-        height: 400px;
-    }
-    .banner >.image h1{
-        font-size: 50px;
-    }
+.carousel .banner-images img{
+   position: absolute;
+   width: 1600px;
+   height: 450px;
+   display: none;
 }
-@media only screen and (max-width: 1000px){
-    header > .container .head{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .search input{
-        width: 500px;
-        text-align: center;
-    }
-    .info{
-        flex-direction: column-reverse;
-        gap:10px;
-    }
-    .banner >.image{
-        height: 350px;
-    }
-    .banner >.image h1{
-        font-size: 45px;
-    }
-    
-    .search{
-        display: flex;
-      justify-content: center;
-    }
-    header > .container .head{
-        align-items: initial;
-    }
-    .head .logo{
-        justify-content: space-between;
-        flex-direction: row-reverse;
-    }
-    .mobile-menu i{
-        display:block;
-    }
-   .head {
-     flex-direction: column;
-    }
-    header nav  ul{
-        flex-direction: column;
-        padding-top: 20px;
-    }
-    header .container nav {
-        width: 50%;
-        height: 100vh;   
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        background-color: lightslategray;
-        left: 0;
-    }
-    header nav{
-        display: none;
-    }
-    header nav ul li{
-        border: none;
-    }
-    
-    header nav ul li:hover{
-     border: none;   
-    }
-    header nav .close{
-        display: flex;
-        justify-content: right;
-        color: #FDB100;
-        padding: 20px;
-        font-size: 25px;
-        
-    }
-    header nav .close i{
-        cursor: pointer;
-        
-    }
-    
-   
+.buttons{
+    position: relative;
+    display: flex;
+    top: 207px;
+    padding-left: 700px;
 }
-@media only screen and (max-width: 900px){
-    .last-part{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .banner >.image h1{
-        font-size: 40px;
-    }
-    header .close{
-        display: block;
-    }
-}
-@media only screen and (max-width: 800px){
-    .service-overview .title, .services-section .title{
-        flex-direction: column;
-    }
-    .service-overview .services{
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .service-list{
-        flex-direction: column;
-    }
-    .service-overview .services .storage{
-        justify-content: center;
-    }
-    .delivary-time {
-        align-items: center;
-        justify-content: center;
-    }
-    .banner >.image h1{
-        font-size: 35px;
-    }
-}
-
-@media only screen and (max-width: 650px){
-    .banner >.image{
-        height: 350px;
-    }
-    .banner >.image h1{
-        font-size: 32px;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .banner >.image{
-        height: 300px;
-    }
-    .banner >.image h1{
-        font-size: 29px;
-    }
-}
-
-@media only screen and (max-width: 550px){
-.service-list ul{
-    margin-left: 30px;
-    .banner >.image{
-        height: 275px;
-    }
-   }
-   .banner >.image h1{
-    font-size: 25px;
-}
-.search input{
-    width: 350px;
-}
-}
-@media only screen and (max-width: 500px){
-    .banner >.image{
-        height: 250px;
-    }
-    .banner >.image h1{
-        font-size: 23px;
-    }
+.d-block{
+    display: block !important;
 }
