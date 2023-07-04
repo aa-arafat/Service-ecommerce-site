@@ -189,6 +189,9 @@ header nav ul li:hover{
 }
 .service-list ul li:hover{
 color: #FDB100;
+
+
+
 }
 footer{
     background-color: black;
@@ -254,7 +257,9 @@ header .close{
    position: absolute;
    width: 1600px;
    height: 450px;
-   display: none;
+   opacity: 0;
+   transition: 0.5s;
+   
 }
 .buttons{
     position: relative;
@@ -295,6 +300,45 @@ header .close{
     background-color: rgba(245, 245, 245, 0.26);
 }
 
+.carousel-service{
+    margin-top: 40px;
+     
+}
+.carousel-service-titel{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.carousel-service-titel h1{
+    margin-left: 50px;
+}
+.carousel-service-titel p{
+    margin-right: 60px;
+    font-size: 25px;
+}
+.banner-images-two  {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+    }
+    .banner-images-two > div img{
+        width: 350px;
+        height: 230px;
+    }
+
+     
+
+.full-opacity{
+    opacity: 1 !important;
+}
+
+.d-none{
+    display: none;
+}
 .d-block{
-    display: block !important;
+  display: block;
+}
+[data-number]{
+    display: none;
 }

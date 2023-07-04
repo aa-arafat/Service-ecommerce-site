@@ -85,10 +85,16 @@
         background-color: black;
         opacity: 0.6;
         display: none;
+        z-index: 5;
     }
     .carousel .banner-images img{
         width: 1000px;
         height: 425px;
+    }
+    
+    .container .active{
+        position: fixed;
+        z-index: 10;
     }
     
    
@@ -131,6 +137,9 @@
     .carousel .banner-images img{
         width: 800px;
         height: 400px;
+    }
+    .services-section{
+              margin-top: 100px;
     }
 }
 @media only screen and (max-width: 700px){
